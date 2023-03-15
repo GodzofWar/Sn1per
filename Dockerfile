@@ -26,7 +26,7 @@ RUN sed -i 's/systemctl status ${PG_SERVICE}/service ${PG_SERVICE} status/g' /us
 WORKDIR /usr/src/app
 
 RUN apt --yes install git bash
-RUN git clone https://github.com/GodzofWar/Sn1per.git \
+RUN git clone -b development https://github.com/GodzofWar/Sn1per.git \
     && cd Sn1per \
     && ./install.sh \
     && sniper -u force
