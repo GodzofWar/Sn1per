@@ -285,7 +285,7 @@ go install github.com/harleo/asnip@latest; ln -fs ~/go/bin/asnip /usr/bin/asnip
 
 # GAU INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing GAU...$RESET"
-go install github.com/lc/gau/v2/cmd/gau@latest; ln -fs ~/go/bin/gau /usr/bin/gau
+go install github.com/lc/gau/v2/cmd/gau@latest; ln -fs ~/go/bin/gau /usr/bin/gau; cp ~/go/bin/gau /usr/loca/bin/gau
 
 # INSTALL HTTPX
 echo -e "$OKBLUE[*]$RESET Installing HTTPX...$RESET"
